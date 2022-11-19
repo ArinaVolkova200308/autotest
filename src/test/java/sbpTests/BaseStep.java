@@ -73,7 +73,7 @@ public class BaseStep {
         timeBlock.shouldBe(visible).click();
         buttonBlock2.shouldBe(visible).click();
         switchTo().frame($x("(//div[@class='modal-footer confirmation']/iframe)"));
-        codeBlock.shouldBe(visible).click();
+        codeBlock.shouldBe(visible).val("0000");
         confirmBlock.shouldBe(visible).click();
         switchTo().defaultContent();
     }
